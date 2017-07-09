@@ -1,0 +1,13 @@
+-runfw: org.eclipse.osgi;version='[3.12.0.v20170512-1932,3.12.0.v20170512-1932]'
+-runproperties: osgi.console=
+-runrequires: \
+	osgi.identity;filter:='(osgi.identity=org.eclipse.equinox.console)',\
+	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.command)',\
+	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.shell)'
+-runee: JavaSE-1.8
+-runbundles: \
+	org.apache.felix.gogo.command;version='[0.16.0,0.16.1)',\
+	org.apache.felix.gogo.runtime;version='[0.16.2,0.16.3)',\
+	org.apache.felix.gogo.shell;version='[0.12.0,0.12.1)',\
+	org.eclipse.equinox.console;version='[1.1.300,1.1.301)'
+-resolve: auto
